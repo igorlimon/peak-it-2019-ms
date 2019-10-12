@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Course.Api", "Course.Api\Co
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Course.Files", "Course.Files\Course.Files.csproj", "{94AD0DAD-11BE-4491-9EC4-1FC8F3255FC0}"
 EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{84E5F0DA-EA67-443C-B223-22CE6583ED23}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -97,6 +99,18 @@ Global
 		{94AD0DAD-11BE-4491-9EC4-1FC8F3255FC0}.Release|x64.Build.0 = Release|Any CPU
 		{94AD0DAD-11BE-4491-9EC4-1FC8F3255FC0}.Release|x86.ActiveCfg = Release|Any CPU
 		{94AD0DAD-11BE-4491-9EC4-1FC8F3255FC0}.Release|x86.Build.0 = Release|Any CPU
+		{84E5F0DA-EA67-443C-B223-22CE6583ED23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84E5F0DA-EA67-443C-B223-22CE6583ED23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84E5F0DA-EA67-443C-B223-22CE6583ED23}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{84E5F0DA-EA67-443C-B223-22CE6583ED23}.Debug|x64.Build.0 = Debug|Any CPU
+		{84E5F0DA-EA67-443C-B223-22CE6583ED23}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{84E5F0DA-EA67-443C-B223-22CE6583ED23}.Debug|x86.Build.0 = Debug|Any CPU
+		{84E5F0DA-EA67-443C-B223-22CE6583ED23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84E5F0DA-EA67-443C-B223-22CE6583ED23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84E5F0DA-EA67-443C-B223-22CE6583ED23}.Release|x64.ActiveCfg = Release|Any CPU
+		{84E5F0DA-EA67-443C-B223-22CE6583ED23}.Release|x64.Build.0 = Release|Any CPU
+		{84E5F0DA-EA67-443C-B223-22CE6583ED23}.Release|x86.ActiveCfg = Release|Any CPU
+		{84E5F0DA-EA67-443C-B223-22CE6583ED23}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

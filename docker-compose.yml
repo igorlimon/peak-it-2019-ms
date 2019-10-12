@@ -1,0 +1,36 @@
+version: '3.4'
+
+services:
+  course.api:
+    image: ${DOCKER_REGISTRY-}courseapi
+    build:
+      context: .
+      dockerfile: Course.Api/Dockerfile
+
+  course.feedback:
+    image: ${DOCKER_REGISTRY-}coursefeedback
+    build:
+      context: .
+      dockerfile: Course.Feedback/Dockerfile
+
+
+  course.files:
+    image: ${DOCKER_REGISTRY-}coursefiles
+    build:
+      context: .
+      dockerfile: Course.Files/Dockerfile
+
+
+  course.identity:
+    image: ${DOCKER_REGISTRY-}courseidentity
+    build:
+      context: .
+      dockerfile: Course.Identity/Dockerfile
+
+
+  course.notification:
+    image: ${DOCKER_REGISTRY-}coursenotification
+    build:
+      context: .
+      dockerfile: Course.Notification/Dockerfile
+
