@@ -7,3 +7,6 @@ docker rm $(docker ps -a -q)
  
  # Display images
  docker images --format "{{.ID}} | {{.Repository}}"
+ 
+ # Course notes
+ https://codeshare.io/peakit-2019-ms
