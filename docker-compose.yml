@@ -1,17 +1,39 @@
 version: '3.4'
 
 services:
+
+  start-dependencies:
+    image: dadarek/wait-for-dependencies
+    depends_on:
+      - rabbitmq
+    command: rabbitmq:5672
+
+  rabbitmq:
+    image: rabbitmq:3.8.0-management
+    ports:
+    - '5672:5672'
+    - '15672:15672'
+
+
   course.api:
     image: ${DOCKER_REGISTRY-}courseapi
     build:
       context: .
       dockerfile: Course.Api/Dockerfile
+    links:
+      - rabbitmq
+    ports:
+      - '5000:5000'
 
   course.feedback:
     image: ${DOCKER_REGISTRY-}coursefeedback
     build:
       context: .
       dockerfile: Course.Feedback/Dockerfile
+    links:
+      - rabbitmq
+    ports:
+      - '6000:6000'
 
 
   course.files:
@@ -19,6 +41,10 @@ services:
     build:
       context: .
       dockerfile: Course.Files/Dockerfile
+    links:
+      - rabbitmq
+    ports:
+      - '7000:7000'
 
 
   course.identity:
@@ -26,6 +52,10 @@ services:
     build:
       context: .
       dockerfile: Course.Identity/Dockerfile
+    links:
+      - rabbitmq
+    ports:
+      - '8000:8000'
 
 
   course.notification:
@@ -33,4 +63,7 @@ services:
     build:
       context: .
       dockerfile: Course.Notification/Dockerfile
-
+    links:
+      - rabbitmq
+    ports:
+      - '9000:9000'
