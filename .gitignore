@@ -4,3 +4,4 @@
 .vs/*
 obj/Docker/*
 obj/Debug/*
+bin/Debug/*
